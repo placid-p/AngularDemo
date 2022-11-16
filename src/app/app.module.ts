@@ -10,6 +10,12 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { FormsModule } from '@angular/forms';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatCardModule} from '@angular/material/card'
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +31,12 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    FlexLayoutModule,
+    MatCardModule,
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

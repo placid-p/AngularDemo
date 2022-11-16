@@ -1,0 +1,47 @@
+.mainimage{
+    height: 500px;
+    background-color:purple;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.text-block {
+    position: absolute;
+    top: 210px;
+    left: 60px;
+    color: white;
+    padding-left: 40px;
+    padding-right: 20px;
+    
+  }
+  h1{
+    font-family: Bahnschrift Condensed;
+    font-size: 60px;
+  }
+  .trvelicon{
+    height: 10px;
+    width: 10px;
+  }
+  .content{
+    padding: 16px; 
+  }
+  .mat4{
+    height: 300px;
+    width: 600px;
+  }
+  mat-card-header{
+    background-color: black;
+  }
+  mat-card-title{
+    color: aliceblue;
+  }
+  .content > mat-card {
+    width: 200px;
+  }
+  .mat4:hover{
+  transform: translate3D(0,-1px,0) scale(1.03); 
+  box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+  transition: all .4s ease; 
+  cursor: pointer;
+  }
