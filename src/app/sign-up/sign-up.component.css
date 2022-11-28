@@ -22,7 +22,7 @@ body{
                 0 10px rgba(0,0,0,0.22)
 
 }
-.signup , .signin{
+.signup, .signin{
     position: absolute;
     top:0;
     left:0;
@@ -80,28 +80,21 @@ button:active{
     transform: scale(0.90);
 
 }
-.overlay-container{
-    position: absolute;
-    top:0;
-    right:0;
-    left: 10%;
-    width: 80%;
-    height: 100%;
-    z-index: 1;
 
-}
 .overlay{
-    position: relative;
-    color: #fff;
-    background: #ff416c;
+    position: absolute;
+    background-image: url('src/assets/images/signin.png');
+    top:0;
+    right:10%;
     left: 50%;
-    height: 100%;
     width: 100%;
-    background: linear-gradient(to right, #ff4b28, #ff228c);
+    height: 100%;
 }
-#SignIn, #SignUp{
+ #SignUp, #SignIn{
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid rgb(8, 8, 8);
+    color: black;
+    
 }
 .overlay-right{
     position: absolute;
@@ -111,7 +104,8 @@ button:active{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    top:0;
-    height: 100%;
-    width: 60%;
+    top:25%;
+    height: 50%;
+    width: 50%;
+ 
 }

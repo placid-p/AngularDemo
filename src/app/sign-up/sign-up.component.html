@@ -1,16 +1,16 @@
 <html>
 <body>
 <div class="container" id="main">
-   <div class="signup" >
-      <form #signupform="ngForm" >
+   <!-- <div class="signup" >
+      <form #signupform="ngForm" (ngSubmit)="signupdatapush(signupform.value)">
          <h1>Create Accout</h1>
          <p>Use your mail for registration</p>
-         <input type="text" name="text" placeholder="Name" ngModel>
-         <input type="text" name="text" placeholder="email" ngModel>
-         <input type="text" name="text" placeholder="Password" ngModel>
+         <input type="text" name="pname" placeholder="Name" ngModel>
+         <input type="text" name="pemail" placeholder="email" ngModel>
+         <input type="text" name="ppassword" placeholder="Password" ngModel>
          <button>Sign Up</button>
       </form>
-   </div>
+   </div> -->
    <div class="signin" >
       <form #signinform="ngForm" >
          <h1>Sign In here</h1>
@@ -24,8 +24,9 @@
       <div class="overlay-container">
          <div class="overlay">
             <div class="overlay-right">
-               <button id="SignUp" >Sign Up</button>
-               <button id="SignIn" >Sign In</button>
+               <!-- <h1>Not your account?</h1>
+               <p>Click Here</p>
+              <button id="SignUp">Sign Up</button>  -->
             </div>
          </div>
       </div>

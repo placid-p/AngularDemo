@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-
+  signupdatapush(data:any){
+    alert(data.pname)
+    alert(data.pemail)
+  }
   constructor() { }
 
   ngOnInit(): void {
   }
+
   
 
 }

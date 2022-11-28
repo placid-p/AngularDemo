@@ -11,7 +11,7 @@
     top: 210px;
     left: 60px;
     color: white;
-    padding-left: 40px;
+    padding-left: 10px;
     padding-right: 20px;
     
   }
@@ -24,11 +24,16 @@
     width: 10px;
   }
   .content{
-    padding: 16px; 
+    padding: 15px; 
+    height: fit-content;
+    width: fit-content;
   }
   .mat4{
-    height: 300px;
-    width: 600px;
+    height:240px;
+    width: 570px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f7f254;
+
   }
   mat-card-header{
     background-color: black;
