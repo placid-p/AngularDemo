@@ -83,7 +83,7 @@ button:active{
 
 .overlay{
     position: absolute;
-    background-image: url('src/assets/images/signup.png');
+    background-image: url('src/assets/images/signin.png');
     top:0;
     right:10%;
     left: 50%;

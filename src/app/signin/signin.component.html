@@ -1,0 +1,25 @@
+<html>
+<body>
+<div class="container" id="main">
+    <div class="signup" >
+      <form #signupform="ngForm">
+         <h1>Create Accout</h1>
+         <p>Use your mail for registration</p>
+         <input type="text" name="pname" placeholder="Name" ngModel>
+         <input type="text" name="pemail" placeholder="email" ngModel>
+         <input type="text" name="ppassword" placeholder="Password" ngModel>
+         <button>Sign Up</button>
+         <p><a routerLink="/signup">Back to Sign In</a></p>
+      </form>
+   </div> 
+
+      <div class="overlay-container">
+         <div class="overlay">
+            <div class="overlay-right">   
+            </div>
+         </div>
+      </div>
+
+</div>
+</body>
+</html>

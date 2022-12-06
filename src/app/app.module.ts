@@ -15,6 +15,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card'
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { CommonModule } from '@angular/common';
     SidenavComponent,
     HomeComponent,
     AboutUsComponent,
-    SignUpComponent
+    SignUpComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
