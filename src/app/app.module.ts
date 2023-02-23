@@ -16,6 +16,7 @@ import {MatCardModule} from '@angular/material/card'
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { SigninComponent } from './signin/signin.component';
+import { RegisterserviceService } from './signin/registerservice.service';
 
 
 @NgModule({
@@ -40,7 +41,7 @@ import { SigninComponent } from './signin/signin.component';
     HttpClientModule,
     CommonModule
   ],
-  providers: [],
+  providers: [RegisterserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
