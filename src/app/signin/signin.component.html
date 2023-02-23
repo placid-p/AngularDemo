@@ -2,7 +2,7 @@
 <body>
 <div class="container" id="main">
     <div class="signup" >
-      <form #signupform="ngForm">
+      <form #signupform="ngForm" (ngSubmit)="Onsubmit(signupform.value)">
          <h1>Create Accout</h1>
          <p>Use your mail for registration</p>
          <input type="text" name="pname" placeholder="Name" ngModel>
