@@ -2,13 +2,37 @@
 <body>
 <div class="container" id="main">
     <div class="signup" >
-      <form  #signupform="ngForm" (ngSubmit)="Onsubmit(signupform.value)">
-         <h1>Create Accout</h1>
+   <form name="form1" #signupform="ngForm" (ngSubmit)="Onsubmit(signupform.value)">
+         <h1>Create Account</h1>
          <p>Use your mail for registration</p>
-         <input type="text" name="Name"  placeholder="Name" ngModel>
-         <input type="text" name="Email" placeholder="email" ngModel>
-         <input type="text" name="Password" placeholder="Password" ngModel>
-         <button>Sign Up</button>
+
+
+         <input type="text" name="Name"  placeholder="Name" [ngModel]="form1.Name"  required  minlength="6"
+         maxlength="20" #Name="ngModel">
+         <div *ngIf="Name.errors" [ngClass] = "'uerror'" > 
+            <div *ngIf="Name.errors['required']" >Username is required</div>
+            <div *ngIf="Name.errors['minlength']">
+              Must be at least 6 characters
+            </div>
+            <div *ngIf="Name.errors['maxlength']">
+              Username must be at most 20 characters
+            </div>
+         </div> 
+
+
+         <input type="email" name="Email" placeholder="email" [ngModel]="form1.Email" required #Email="ngModel" [pattern]="emailpattern">
+         <div *ngIf="Email.errors" [ngClass] = "'uerror'"> 
+            <div *ngIf="Email.errors['required']">Email is required</div>
+            <div *ngIf="Email.errors['pattern']">Email is invalid</div>
+         </div>
+
+         <input type="password" name="Password" placeholder="Password" [ngModel]="form1.Password" required #Password="ngModel">
+         <div *ngIf="Password.errors" [ngClass]="'uerror'">
+            <div *ngIf="Password.errors['required']">Password is required</div>
+         </div>
+
+
+         <button [disabled]="signupform.invalid">Sign Up</button>
          <p><a routerLink="/signup">Back to Sign In</a></p>
       </form>
    </div> 

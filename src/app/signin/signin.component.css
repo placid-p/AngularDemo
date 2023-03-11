@@ -78,8 +78,12 @@ button{
 }
 button:active{
     transform: scale(0.90);
-
 }
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #f29483;
+    color: #666666;
+  }
 
 .overlay{
     position: absolute;
@@ -109,3 +113,20 @@ button:active{
     width: 50%;
  
 }
+
+.uerror{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: 100;
+    color: #ff4b2b;
+    display: inline-block;
+    margin: -9px 80px 3px -80px;
+
+}
+input.ng-invalid {
+    border: red 1px solid;
+    
+}
+input:focus {
+    box-shadow: 0 0 5px #f794a3;
+  }

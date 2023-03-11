@@ -20,9 +20,9 @@ var router = express.Router();
 router.post('/signin', (req, res)=> {
 
   var userDetails = new userModel({
-    name:req.body.name,
-    email: req.body.email,
-    password: req.body.password
+    name:req.body.Name,
+    email: req.body.Email,
+    password: req.body.Password
      
   })
 try{
