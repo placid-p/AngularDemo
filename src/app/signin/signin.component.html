@@ -6,10 +6,10 @@
          <h1>Create Account</h1>
          <p>Use your mail for registration</p>
 
-
+         <!-- Name and its validation -->
          <input type="text" name="Name"  placeholder="Name" [ngModel]="form1.Name"  required  minlength="6"
          maxlength="20" #Name="ngModel">
-         <div *ngIf="Name.errors" [ngClass] = "'uerror'" > 
+         <div *ngIf="Name.errors && (Name.dirty || Name.touched)"  [ngClass] = "'uerror'" > 
             <div *ngIf="Name.errors['required']" >Username is required</div>
             <div *ngIf="Name.errors['minlength']">
               Must be at least 6 characters
@@ -19,19 +19,20 @@
             </div>
          </div> 
 
-
+         <!-- Email and its validation -->
          <input type="email" name="Email" placeholder="email" [ngModel]="form1.Email" required #Email="ngModel" [pattern]="emailpattern">
-         <div *ngIf="Email.errors" [ngClass] = "'uerror'"> 
+         <div *ngIf="Email.errors && (Email.dirty || Email.touched)" [ngClass] = "'uerror'"> 
             <div *ngIf="Email.errors['required']">Email is required</div>
             <div *ngIf="Email.errors['pattern']">Email is invalid</div>
          </div>
 
+         <!-- Password and its validation -->
          <input type="password" name="Password" placeholder="Password" [ngModel]="form1.Password" required #Password="ngModel">
-         <div *ngIf="Password.errors" [ngClass]="'uerror'">
+         <div *ngIf="Password.errors && (Password.dirty || Password.touched)" [ngClass]="'uerror'">
             <div *ngIf="Password.errors['required']">Password is required</div>
          </div>
 
-
+         
          <button [disabled]="signupform.invalid">Sign Up</button>
          <p><a routerLink="/signup">Back to Sign In</a></p>
       </form>

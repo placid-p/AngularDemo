@@ -118,15 +118,12 @@ button[disabled]{
     font-family: "Times New Roman", Times, serif;
     font-size: 14px;
     font-weight: 100;
-    color: #ff4b2b;
+    color: #f07612;
     display: inline-block;
     margin: -9px 80px 3px -80px;
 
 }
-input.ng-invalid {
-    border: red 1px solid;
-    
-}
+
 input:focus {
-    box-shadow: 0 0 5px #f794a3;
+    box-shadow: 0 0 6px #7c7274;
   }
