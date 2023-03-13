@@ -2,12 +2,13 @@
 <body>
 <div class="container" id="main">
    <div class="signin" >
-      <form #signinform="ngForm" >
+      <form name="form2" #signinform="ngForm" (ngSubmit)="Onsubmit(signinform.value)">
          <h1>Sign In here</h1>
          <p>Use your mail for registration</p>
-         <input type="text" name="text" placeholder="email" ngModel>
-         <input type="text" name="text" placeholder="Password" ngModel>
+         <input type="email" name="email1" placeholder="email" ngModel>
+         <input type="password" name="password1" placeholder="Password" ngModel>
          <button>Sign In</button>
+         <!-- <p>{{message}}</p> -->
          <p>Don't have account? <a routerLink="/signin">Register here</a></p>
       </form>
    </div>

@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            
             "outputPath": "dist/my-website",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -68,7 +69,8 @@
               "browserTarget": "MyWebsite:build:production"
             },
             "development": {
-              "browserTarget": "MyWebsite:build:development"
+              "browserTarget": "MyWebsite:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
